@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/lawyer_style.css" media="screen" />
+		<title>Lawyer&amp;Attorney</title>
+        <style>
+            #home {
+                text-align:center;
+                font-family: cursive, bold;
+                color:green;
+                font-size: 200%;
+                transition: font-size .1s;
+            }
+
+            #home:hover {
+                font-size: 210%;
+                text-align: center;
+            }
+
+            #list1 {
+                width: 50px;
+                height: 30px;
+                color:black;
+                left: 400px;
+                top: 400px;
+                text-align:center;
+                font-size: 100%;
+                font-family: cursive;
+                -webkit-transition: width 1s;
+                transition: height .4s, width .4s, font-size .4s, background-color .4s, color .4s;
+            }
+
+            #list1:hover {
+                width:400px;
+                height:50px;
+                background-color: #ff434c;
+                color:#feea7f;
+                font-family:cursive;
+                font-size: 115%;
+            }
+
+            hr {
+                height: 30px;
+                border-style: solid;
+                border-color: black;
+                border-width: 1px 0 0 0;
+                border-radius: 20px;
+            }
+            hr:before {
+                display: block;
+                content: "";
+                height: 30px;
+                margin-top: -31px;
+                border-style: solid;
+                border-color: black;
+                border-width: 0 0 1px 0;
+                border-radius: 20px;
+            }
+
+            #link2 {
+                color:blue;
+                font-family:sans-serif;
+            }
+
+            #link {
+                width: 50px;
+                height: 30px;
+                left: 400px;
+                color: blue;
+                top: 400px;
+                font-size: 100%;
+                -webkit-transition: width 1s;
+                transition: height .4s, width .4s, font-size .4s, background-color .4s, color .4s;
+            }
+
+            #link:hover {
+                width:400px;
+                height:50px;
+                background-color: #ff434c;
+                font-size: 115%;
+                color: #c1ac07;
+            }
+
+            @import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+            body {
+                background-image: url("./Images/oldpaper.jpg");
+                font-family: cursive, serif;
+                padding: 20px;
+            }
+
+            #pitch {
+                text-align: center;
+                font-family: cursive;
+            }
+
+            {
+                box-sizing: border-box;
+            }
+
+            a {
+                color: #f06d06;
+                text-decoration: none;
+                align-content: center;
+            }
+
+            #a2 {
+                color:black;
+            }
+
+            .box {
+                padding: 2em;
+                border: 1px solid #ccc;
+                display: block;
+                width: 50%;
+                height: 300px;
+
+                margin: -1px 0 0 -1px;
+                color: black;
+                background: linear-gradient(
+                        #feea7f, #a99a55 50%, #584e2c 50%, #2d2816
+                );
+                background-size: 100% 202%;
+                transition: all 0.2s ease;
+                animation: down-bump 0.4s ease;
+            }
+
+            .box h2 {
+                font-weight: 400;
+                letter-spacing: -1.5px;
+                line-height: 1.2;
+            }
+
+            .box h5 {
+                color: dimgray;
+                opacity: 1;
+                float:right;
+            }
+
+            .box p {
+                font: 0.8em: cursive, serif;
+                opacity:0;
+            }
+
+            .box:hover {
+                background-position: 100% 100%;
+                animation: up-bump 0.4s ease;
+            }
+
+            .box:hover h2 {
+                color: #ff434b;
+            }
+
+            .box:hover h2 span {
+                color: white;
+            }
+
+            .box:hover h5 {
+                opacity:0;
+            }
+
+            .box:hover p {
+                color: #999999;
+                opacity:1;
+            }
+
+            @keyframes up-bump {
+                0% { padding-top: 2em; }
+                50% { padding-top: 1.5em; }
+                100% { padding-top: 2em; }
+            }
+            @keyframes down-bump {
+                0% { padding-top: 2em; }
+                50% { padding-top: 2.5em; }
+                100% { padding-top: 2em; }
+            }
+
+        </style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo">
+					<h1 id="home"><a href="index.html">Lawyer<span>&amp;</span>Attorney</a></h1>
+				</div>
+				<div class="clr"></div>
+			</div>
+			<div class="content">
+                <ul id="menu" style="text-align: center">
+					<a class="current" href="#" id="list1">Home</a>
+					<a href="#" id="list1">Practice</a>
+					<a href="#" id="list1">Attorneys</a>
+					<a href="#" id="list1">Accidents</a>
+					<a href="#" id="list1">News</a>
+					<a href="#" id="list1">About Us</a>
+					<a href="#" id="list1">Contact Us</a>
+                </ul>
+                <img src="./Images/stocklawimage.jpg" alt="image" style="height:200px; width:250px; position:absolute; left:1000px; top:30px">
+				<div id="pitch">
+					<h1><u>Sed at elit non est auctor lobortis sed nec<br />
+					Vivamus nec odio eget lacus semper</u></h1>
+					<p><em>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut enim risus, rhoncus sit amet ultricies vel, aliquet ut dolor. Duis iaculis urna vel massa ultricies suscipit.</em></p>
+				</div>
+                <hr >
+                <a class="box">
+					<h2>Attorneys</h2>
+					<p>Sed at elit non est auctor lobortis sed nec turpis. Vivamus nec odio eget lacus semper ultrices.<br>
+                        Cras rhoncus purus id lectus congue eu faucibus leo bibendum. Curabitur fermentum lobortis nunc, at ornare ante tristique quis.</p>
+					<h5>*Mouse over for details*</h5>
+                    <a id="link" class="link" href="#"><u>MORE</u></a>
+
+                </a><br>
+                <a class="box">
+					<h2>Accidents</h2>
+                    <h5>*Mouse over for details*</h5>
+					<p>Sed at elit non est auctor lobortis sed nec turpis. Vivamus nec odio eget lacus semper ultrices. Cras rhoncus purus id lectus congue eu faucibus leo bibendum. Curabitur fermentum lobortis nunc, at ornare ante tristique quis.</p>
+					<a id="link" class="link" href="#"><u>MORE</u></a>
+
+                </a><br>
+                <a class="box">
+					<h2>Practice</h2>
+                    <h5>*Mouse over for details*</h5>
+					<p>Sed at elit non est auctor lobortis sed nec turpis. Vivamus nec odio eget lacus semper ultrices. Cras rhoncus purus id lectus congue eu faucibus leo bibendum. Curabitur fermentum lobortis nunc, at ornare ante tristique quis.</p>
+					<a id="link" class="link" href="#"><u>MORE</u></a>
+				</a><br>
+				<div class="clr"></div>
+			</div>
+            <br>
+            <hr >
+			<div id="main">
+				<div class="col">
+					<h3>Latest Articles</h3>
+					<div class="article">
+						<p class="date">March, 2010</p>
+						<h4><a id="link" href="http://www.accidentlawyersnc.com/"><u>Truck Accident Lawyers</u></a></h4>
+						<p class="short">Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat. <a href="#">&raquo;</a></p>
+					</div>
+					<div class="article">
+						<p class="date">February, 2010</p>
+						<h4><a id="link" href="http://www.mccabelawoffices.com/"><u>Car Accident Lawyers</u></a></h4>
+						<p class="short">Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat. <a href="#">&raquo;</a></p>
+					</div>
+					<div class="article">
+						<p class="date">January, 2010</p>
+						<h4><a id="link" href="http://www.hardisonwood.com/"><u>Car Accident Attorneys</u></a></h4>
+						<p class="short">Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat. <a href="#">&raquo;</a></p>
+					</div>
+				</div>
+                <br>
+                <hr >
+				<div class="col">
+					<h3>External Resources</h3>
+					<div class="article">
+						<p class="date">March, 2010</p>
+						<h4><a id="link" href="http://www.truckingattorney.com/"><u>Truck Accident Attorneys</u></a></h4>
+						<p class="short">Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat. <a href="#">&raquo;</a></p>
+					</div>
+					<div class="article">
+						<p class="date">February, 2010</p>
+						<h4><a id="link" href="http://www.lawyermarketinggroup.com/"><u>Law Firm Marketing</u></a></h4>
+						<p class="short">Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat. <a href="#">&raquo;</a></p>
+					</div>
+					<div class="article">
+						<p class="date">January, 2010</p>
+						<h4><a id="link" href="#"><u>Nunc pellentesque a porta lacus</u></a></h4>
+						<p class="short">Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat. <a href="#">&raquo;</a></p>
+					</div>
+				</div>
+                <br>
+                <hr >
+				<div class="col last">
+					<h3>Verdicts and Settlements</h3>
+					<div class="case">
+						<img src="images/guilty.jpeg" alt="Case Thumb" style="height:100px; width:100px" />
+						<p><a id="link" href="http://www.vizua.net"><u>Donec arcu, convallis at pharetra</u></a><br />
+						Nunc in neque sem, a porta lacus. Pellentesque habitant morbi tristique senectus et netus et </p>
+					</div>
+					<div class="case">
+						<img src="images/thumb.gif" alt="Case Thumb" />
+						<p><a id="link" href="#"><u>Quisque quis laoreet tristique</u></a><br />
+						Nunc in neque sem, a porta lacus. Pellentesque habitant morbi tristique senectus et netus et </p>
+					</div>
+					<div class="case">
+						<img src="images/thumb.gif" alt="Case Thumb" />
+						<p><a id="link" href="#"><u>Nunc pellentesque a porta lacus</u></a><br />
+						Nunc in neque sem, a porta lacus. Pellentesque habitant morbi tristique senectus et netus et </p>
+					</div>
+					<div class="case">
+						<img src="images/thumb.gif" alt="Case Thumb" />
+						<p><a id="link" href="#"><u>Nunc pellentesque a porta lacus</u></a><br />
+						Nunc in neque sem, a porta lacus. Pellentesque habitant morbi tristique senectus et netus et </p>
+					</div>
+				</div>
+				<div class="clr"></div>
+			</div>
+            <br>
+            <hr >
+			<div id="footer">
+				<p id="links">
+					<a id="link2" href="#">Privacy Policy | </a>
+					<a id="link2" href="#">Terms of Use</a>
+				</p>
+				<p>
+					<a id="list1" href="#">Home</a>
+					<a id="list1" href="#">Practice</a>
+					<a id="list1" href="#">Attorneys</a>
+					<a id="list1" href="#">Accidents</a>
+					<a id="list1" href="#">News</a>
+					<a id="list1" href="#">About Us</a>
+					<a id="list1" href="#">Contact Us</a>
+				</p>
+
+
+				<p>Copyright &copy; 2010 &minus; Lawyer&amp;Attorney &middot; Design: Luka Cvrk, <a href="http://www.solucija.com" title="Free CSS Templates">Solucija</a> &not; <a href="http://www.lawyermarketinggroup.com/">Law Firm Marketing</a></p>
+			</div>
+		</div>
+	</body>
+</html>
